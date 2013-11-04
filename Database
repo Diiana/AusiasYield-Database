@@ -51,3 +51,37 @@ INSERT INTO `alumno` (`id`, `id_usuario`, `dni`, `numexpediente`, `nombre`, `ape
 (8, 8, '24563897J', '000000008', 'Pedro', 'Benito', 'Camela', 'Hombre', 'C/Autovia 52-4', '46020', 'Valencia', 'Valencia', '620147893', 'Pedro@hotmail.com', 'no'),
 (9, 9, '23547711L', '000000009', 'Rafael', 'Lavara', 'Mintonga', 'Hombre', 'C/La alhambra 557-1', '46020', 'Valencia', 'Valencia', '623014785', 'Rafael@gmail.com', 'no'),
 (10, 10, '22144457F', '00000010', 'Daniel', 'Bonti', 'Basta', 'Hombre', 'C/La higuera 45-1', '46211', 'Albacete', 'Albacete', '677845021', 'Daniel@hotmail.com', 'si');
+
+
+
+
+--
+-- Estructura de tabla para la tabla `lenguaje`
+-- By Diana Ortega Ortega
+--
+
+CREATE TABLE IF NOT EXISTS `lenguaje` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+--
+-- Volcado de datos para la tabla `lenguaje`
+--
+
+INSERT INTO `lenguaje` (`id`, `nombre`) VALUES
+(1, 'java'),
+(2, 'javascript'),
+(3, 'php'),
+(4, 'css'),
+(5, 'html'),
+(6, 'xml'),
+(7, 'json'),
+(8, 'ruby'),
+(9, 'phyton'),
+(10, 'scala');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
